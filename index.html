@@ -1,0 +1,326 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/onsenui.css">
+    <link rel="stylesheet" href="css/onsen-css-components-default.css">
+    <link rel="stylesheet" href="css/sliding_menu.css">
+	<link rel="stylesheet" href="css/stored_card.css">
+	<script src="js/angular.js"></script>
+    <script src="js/onsenui.js"></script>
+    <script>
+      ons.bootstrap();
+    </script>
+  </head>
+  <body>
+
+<!--Stored Card -->
+
+<ons-page>
+
+      <ons-toolbar>
+
+        <div class="left"></div>
+        <div class="center" style="font-family: Arial; font-size: 16px; font-weight: bold;">Make Payment</div>
+		<div class="right">
+          <ons-toolbar-button>
+            <ons-icon icon="ion-navicon" style="font-size: 28px; font-weight: bold; width: 1em"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+      </ons-toolbar>
+
+	<div class="navigation-bar" style="background-color: #FFFFFF; color: #000000; border-bottom: 2px solid #92D24A;">
+    <div class="navigation-bar__left"> 
+		<ons-back-button style="margin-left: -4px;" ng-click="app.navi.popPage('page2.html');" ></ons-back-button>
+    </div>
+    <div class="navigation-bar__center" style="font-family: Arial; font-size: 14px; color: #636363; font-weight: bold;">
+    Choose Payment Method
+    </div>
+    <div class="navigation-bar__right" style="color: #000000;">
+	          <ons-toolbar-button >
+            <ons-icon icon="ion-plus-round" style="font-size: 23px; width: 1em; color: #7FCC28; padding-right: 4px;" ></ons-icon>
+          </ons-toolbar-button>
+</div>
+</div> 
+	
+        <span style="font-family: Arial; font-size: 12px; line-height: 24px; padding: 0 0 0 12px; color: #666666; font-weight: bold;">Payment Amount: $180.00</span>
+<!--Electronic Check -->		
+
+		<ons-list-item modifier="tappable" style="border-bottom: 0px solid #ddd;">
+		<ons-row>
+		<ons-col width="87%" style="border: 1px solid #F0EEEE; border-radius: 5px; line-height: 35px; box-shadow: 1px 1px 1px 0px #888888; background-color: #FFFFFF;">
+          
+<div class="button-holder">
+<input type="radio" checked="" class="regular-radio" name="radio-1-set" id="radio-1-set"><label for="radio-1-set"></label><br>
+</div>
+		   
+		   <span style="font-family: Arial; font-size: 12px; margin-left: 10px; color: #666666; font-weight: bold;">Electronic Check</span>	
+			
+				
+	<div class="plan-info">
+         <div ng-hide="a % 4 == 0" class="">
+                   *********1545
+          </div>
+		  <div ng-hide="a % 4 == 0" class="">&nbsp;
+          </div>
+	</div>
+	
+	</ons-col>
+	<ons-col width="13%">
+	<span class="list-item-action">
+            <ons-icon icon="ion-compose" size="22px" onclick="alert('Change Check')"></ons-icon>
+          </span>
+		</ons-col>	
+		
+	<ons-col>
+	<span class="list-item-round">
+       <ons-icon icon="ion-close" size="16px" onclick="alert('Delete Check')"></ons-icon>
+          </span>
+		</ons-col>	
+          </label>
+		  </ons-row>
+        </ons-list-item>
+	
+		<div style="min-height: 8px;"></div>
+<!--Credit Card -->		
+			<ons-list-item modifier="tappable" style="border-bottom: 0px solid #ddd;">
+		<ons-row>
+		<ons-col width="87%" style="border: 1px solid #F0EEEE; border-radius: 5px; line-height: 35px; box-shadow: 1px 1px 1px 0px #888888; background-color: #FFFFFF;">
+          
+<div class="button-holder">
+<input type="radio" checked="" class="regular-radio" name="radio-1-set" id="radio-2-set"><label for="radio-2-set"></label><br>
+</div>
+		   
+		   <span style="font-family: Arial; font-size: 12px; margin-left: 10px; color: #666666; font-weight: bold;">Credit Card</span>	
+			
+				
+	<div class="plan-info">
+         <div ng-hide="a % 4 == 0" class="">
+                   *********6789
+          </div>
+		  <div ng-hide="a % 4 == 0" class="">&nbsp;
+          </div>
+	</div>
+	</ons-col>
+	<ons-col width="11%">
+	 <span><img src="images/autopay.png"></span>	
+	</ons-col>
+	<ons-col width="13%">
+	<span class="list-item-action">
+            <ons-icon icon="ion-compose" size="22px" onclick="alert('Change Check')"></ons-icon>
+          </span>
+		</ons-col>	
+		
+	<ons-col>
+	<span class="list-item-round">
+       <ons-icon icon="ion-close" size="16px" onclick="alert('Delete Check')"></ons-icon>
+          </span>
+		</ons-col>	
+          </label>
+		  </ons-row>
+        </ons-list-item>
+		<div style="min-height: 8px;"></div>
+<!--Debit Card -->		
+ 		<ons-list-item modifier="tappable" style="border-bottom: 0px solid #ddd;">
+		<ons-row>
+		<ons-col width="87%" style="border: 1px solid #F0EEEE; border-radius: 5px; line-height: 35px; box-shadow: 1px 1px 1px 0px #888888; background-color: #FFFFFF;">
+          
+<div class="button-holder">
+<input type="radio" checked="" class="regular-radio" name="radio-1-set" id="radio-3-set"><label for="radio-3-set"></label><br>
+</div>
+		   
+		   <span style="font-family: Arial; font-size: 12px; margin-left: 10px; color: #666666; font-weight: bold;">Debit Card</span>	
+			
+				
+	<div class="plan-info">
+         <div ng-hide="a % 4 == 0" class="">
+                   *********2345
+          </div>
+		  <div ng-hide="a % 4 == 0" class="">&nbsp;
+          </div>
+	</div>
+	</ons-col>
+	<ons-col width="13%">
+	<span class="list-item-action">
+            <ons-icon icon="ion-compose" size="22px" onclick="alert('Change Check')"></ons-icon>
+          </span>
+		</ons-col>	
+		
+	<ons-col>
+	<span class="list-item-round">
+       <ons-icon icon="ion-close" size="16px" onclick="alert('Delete Check')"></ons-icon>
+          </span>
+		</ons-col>	
+          </label>
+		  </ons-row>
+        </ons-list-item>
+
+
+<!--Sample-->
+<div style="min-height: 8px;"></div>
+		 		<ons-list-item modifier="tappable" style="border-bottom: 0px solid #ddd;">
+		<ons-row>
+		<ons-col width="87%" style="border: 1px solid #F0EEEE; border-radius: 5px; line-height: 35px; box-shadow: 1px 1px 1px 0px #888888; background-color: #FFFFFF;">
+          
+		   
+<div class="button-holder">
+<input type="radio" checked="" class="regular-radio" name="radio-1-set" id="radio-4-set"><label for="radio-4-set"></label><br>
+</div>
+		   
+		   <span style="font-family: Arial; font-size: 12px; margin-left: 10px; color: #666666; font-weight: bold;">Debit Card</span>	
+			
+				
+	<div class="plan-info">
+         <div ng-hide="a % 4 == 0" class="">
+                   *********4567
+          </div>
+		  <div ng-hide="a % 4 == 0" class="">&nbsp;
+          </div>
+	</div>
+	</ons-col>
+	<ons-col width="13%">
+	<span class="list-item-action">
+            <ons-icon icon="ion-compose" size="22px" onclick="alert('Change Check')"></ons-icon>
+          </span>
+		</ons-col>	
+		
+	<ons-col>
+	<span class="list-item-round">
+       <ons-icon icon="ion-close" size="16px" onclick="alert('Delete Check')"></ons-icon>
+          </span>
+		</ons-col>	
+          </label>
+		  </ons-row>
+        </ons-list-item>
+		<div style="min-height: 8px;"></div>
+		 		<ons-list-item modifier="tappable" style="border-bottom: 0px solid #ddd;">
+		<ons-row>
+		<ons-col width="87%" style="border: 1px solid #F0EEEE; border-radius: 5px; line-height: 35px; box-shadow: 1px 1px 1px 0px #888888; background-color: #FFFFFF;">
+          
+
+		   
+<div class="button-holder">
+<input type="radio" checked="" class="regular-radio" name="radio-1-set" id="radio-5-set"><label for="radio-5-set"></label><br>
+</div>
+		   
+		   <span style="font-family: Arial; font-size: 12px; margin-left: 10px; color: #666666; font-weight: bold;">Debit Card</span>	
+			
+				
+	<div class="plan-info">
+         <div ng-hide="a % 4 == 0" class="">
+                   *********8786
+          </div>
+		  <div ng-hide="a % 4 == 0" class="">&nbsp;
+          </div>
+	</div>
+	</ons-col>
+	<ons-col width="13%">
+	<span class="list-item-action">
+            <ons-icon icon="ion-compose" size="22px" onclick="alert('Change Check')"></ons-icon>
+          </span>
+		</ons-col>	
+		
+	<ons-col>
+	<span class="list-item-round">
+       <ons-icon icon="ion-close" size="16px" onclick="alert('Delete Check')"></ons-icon>
+          </span>
+		</ons-col>	
+          </label>
+		  </ons-row>
+        </ons-list-item>
+		<div style="min-height: 8px;"></div>
+		 		<ons-list-item modifier="tappable" style="border-bottom: 0px solid #ddd;">
+		<ons-row>
+		<ons-col width="87%" style="border: 1px solid #F0EEEE; border-radius: 5px; line-height: 35px; box-shadow: 1px 1px 1px 0px #888888; background-color: #FFFFFF;">
+          
+		   
+<div class="button-holder">
+<input type="radio" checked="" class="regular-radio" name="radio-1-set" id="radio-6-set"><label for="radio-6-set"></label><br>
+</div>
+		   
+		   <span style="font-family: Arial; font-size: 12px; margin-left: 10px; color: #666666; font-weight: bold;">Credit Card</span>	
+			
+				
+	<div class="plan-info">
+         <div ng-hide="a % 4 == 0" class="">
+                   *********8888
+          </div>
+		  <div ng-hide="a % 4 == 0" class="">&nbsp;
+          </div>
+	</div>
+	</ons-col>
+	<ons-col width="13%">
+	<span class="list-item-action">
+            <ons-icon icon="ion-compose" size="22px" onclick="alert('Change Check')"></ons-icon>
+          </span>
+		</ons-col>	
+		
+	<ons-col>
+	<span class="list-item-round">
+       <ons-icon icon="ion-close" size="16px" onclick="alert('Delete Check')"></ons-icon>
+          </span>
+		</ons-col>	
+          </label>
+		  </ons-row>
+        </ons-list-item>
+
+
+	
+				
+	
+<!--SAmple-->
+
+<div style="min-height: 8px;"></div>
+<!--
+<ons-row>
+<ons-col width="10%">
+<label class="checkbox checkbox--list-item">
+            <input type="checkbox" checked="checked">
+            <div class="checkbox__checkmark checkbox--list-item__checkmark" style="margin-left: 10px; margin-top: 8px;"></div>
+          </label>
+</ons-col>
+<ons-col width="86%">
+<p style="font-family: Arial; color: #666666; font-size: 11px; padding-left: 12px; padding-right: 2px; ">Please tick here once you have read & agreed to our terms and conditions. </p>
+</ons-col>
+<ons-col width="4%"></ons-col>
+</ons-row>
+-->
+
+
+<ons-bottom-toolbar>
+<hr style="border: 1px solid #E6E6E6; width: 90%"/>
+<!--
+     <ons-button class="default-grey btns" onclick="myNavigator.pushPage('index.html', { animation : 'lift' } )">
+      Cancel
+      </ons-button>&nbsp;
+    <ons-button class="default-green btns" onclick="myNavigator_make_payment.pushPage('make_payment2.html', { animation : 'lift' } )">
+      Submit
+      </ons-button>
+ -->
+ <ons-row>
+<ons-col width="10%">
+<label class="checkbox checkbox--list-item">
+            <input type="checkbox" checked="checked">
+            <div class="checkbox__checkmark checkbox--list-item__checkmark" style="margin-left: 11px; margin-top: 8px;"></div>
+          </label>
+</ons-col>
+<ons-col width="86%">
+<p style="font-family: Arial; color: #666666; font-size: 11px; padding-left: 12px; padding-right: 2px; ">Please tick here once you have read & agreed <br>to our <a href="#">terms and conditions</a>. </p>
+</ons-col>
+<ons-col width="4%"></ons-col>
+</ons-row>
+
+     <ons-button class="default-grey btns" onclick="myNavigator.pushPage('indexw.html', { animation : 'lift' } )">
+      Cancel
+      </ons-button>&nbsp;
+    <ons-button class="default-green btns" onclick="myNavigator_make_payment.pushPage('make_payment2.html', { animation : 'lift' } )">
+      Submit
+      </ons-button>
+ 
+  </ons-bottom-toolbar>
+  
+</ons-page> 
+
+  </body>
+</html>
